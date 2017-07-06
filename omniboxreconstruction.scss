@@ -1,0 +1,118 @@
+//---------------------------------------------->>
+//--- Google Omnibox Reconstruction
+//--- Devon Germano - devon@cphandheld.com
+//--- July 2017
+//----------------------------------------------->>
+
+$omnibox-width: 360px;
+$omnibox-height: 48px;
+$omnibox-input-height: 25px;
+$omnibox-external-padding: 2px 0px 2px 0px;
+$omnibox-hi-color: #9b9b9b;
+$omnibox-button-width: $omnibox-height + 10px; // TODO: standardize on degree of rectification
+$omnibox-droplist-height: 190px;
+$omnibox-border-color: #e1e1e1;
+$omnibox-search-hover-color: #1781ff; // TODO: point this to primary color
+$omnibox-search-result-amount: 5; // 5 is probably best
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.omnibox-container {
+  position: absolute;
+  height: $omnibox-height + $omnibox-droplist-height;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
+  transition: background 0.3s ease 0s, box-shadow 0.3s ease 0s;
+}
+
+.omnibox {
+  height: $omnibox-height;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $omnibox-border-color;
+}
+
+.omnibox-input-container {
+  height: $omnibox-input-height;
+  & input {
+    height: $omnibox-input-height;
+    width: 250px;
+    margin: 0 5px 0 5px; // TODO: This should be a variable to be used on the omnibox droplist text
+    border: 0;
+    caret-color: $omnibox-hi-color;
+  }
+}
+
+// The dud icon holder, not an actual icon (like for a button, that's different)
+.omnibox-icon {
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $omnibox-button-width;
+  & i {
+    color: $omnibox-hi-color;
+    user-select: none;
+  }
+}
+
+.omnibox-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & button {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    height: $omnibox-height + 2px; // The top and bottom padding plus the bottom border
+    width: $omnibox-button-width;
+    & i {
+      color: $omnibox-hi-color;
+      user-select: none;
+    }
+  }
+  & button.search {
+    & i:hover { // TODO: this hover should be on the parent, mod the child
+      color: $omnibox-search-hover-color;
+      user-select: none;
+    }
+  }
+}
+
+// The box that exists inside of the extended omnibox-container, holds the search results
+.omnibox-droplist {
+  height: $omnibox-droplist-height;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 3px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
+  transition: background 0.3s ease 0s, box-shadow 0.3s ease 0s;
+  & ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    & li:first-child{
+      background-color: #ededed;
+    }
+    & li {
+      display: flex;
+      align-items: center;
+      height: $omnibox-droplist-height / $omnibox-search-result-amount;
+      & .omnibox-selectable {
+        display: flex;
+        align-items: center;
+        height: $omnibox-droplist-height / $omnibox-search-result-amount;
+        border-bottom: 1px solid $omnibox-border-color;
+        width: calc(100% - #{$omnibox-button-width}); // weird scss interpolation syntax
+        margin: 0 0 0 5px;
+        & span {
+          cursor: default;
+          font-size: 14px;
+        }
+      }
+      &:hover {
+        background-color: #ededed;
+      }
+    }
+  }
+}
