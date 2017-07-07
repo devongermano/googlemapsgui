@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c3473c9-f763-4086-9e58-a81c107583bf" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/omniboxreconstruction.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omniboxreconstruction.html" afterPath="$PROJECT_DIR$/omniboxreconstruction.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omniboxreconstruction.scss" afterPath="$PROJECT_DIR$/omniboxreconstruction.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,8 +23,8 @@
           <file leaf-file-name="omniboxreconstruction.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/omniboxreconstruction.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="578">
-                  <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+                <state relative-caret-position="323">
+                  <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -36,8 +37,8 @@
           <file leaf-file-name="omniboxreconstruction.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/omniboxreconstruction.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="307">
-                  <caret line="123" column="43" lean-forward="false" selection-start-line="123" selection-start-column="43" selection-end-line="123" selection-end-column="43" />
+                <state relative-caret-position="972">
+                  <caret line="195" column="12" lean-forward="true" selection-start-line="195" selection-start-column="12" selection-end-line="195" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -79,8 +80,8 @@
         <option value="$PROJECT_DIR$/Reconstruction/omniboxreconstruction.css" />
         <option value="$PROJECT_DIR$/Reconstruction/omniboxreconstruction.scss" />
         <option value="$PROJECT_DIR$/Reconstruction/omniboxreconstruction.html" />
-        <option value="$PROJECT_DIR$/omniboxreconstruction.html" />
         <option value="$PROJECT_DIR$/omniboxreconstruction.scss" />
+        <option value="$PROJECT_DIR$/omniboxreconstruction.html" />
       </list>
     </option>
   </component>
@@ -245,17 +246,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1499289650595</updated>
-      <workItem from="1499289651793" duration="29448000" />
+      <workItem from="1499289651793" duration="30228000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29448000" />
+    <option name="totallyTimeSpent" value="30228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10585938" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10585938" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -324,18 +326,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omniboxreconstruction.html">
+    <entry file="file://$PROJECT_DIR$/omniboxreconstruction.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        <state relative-caret-position="972">
+          <caret line="195" column="12" lean-forward="true" selection-start-line="195" selection-start-column="12" selection-end-line="195" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omniboxreconstruction.scss">
+    <entry file="file://$PROJECT_DIR$/omniboxreconstruction.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="123" column="43" lean-forward="false" selection-start-line="123" selection-start-column="43" selection-end-line="123" selection-end-column="43" />
+        <state relative-caret-position="323">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding />
         </state>
       </provider>
