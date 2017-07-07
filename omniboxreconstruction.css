@@ -228,4 +228,9 @@ body {
   .user-circle .user-circle-rel {
     color: white;
     font-size: 18px;
-    text-align: center; }
+    text-align: center;
+    background-color: transparent;
+    border: 0;
+    height: 35px;
+    width: 35px;
+    padding: 0; }

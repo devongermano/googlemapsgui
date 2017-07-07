@@ -22,6 +22,10 @@ $omnibox-font-size: 14px; // TODO: swap this for global default font size
 // Omnisidebar
 $omnisidebar-width: $omnibox-width + 40px;
 
+
+//User Circle
+$user-circle-size: 35px; // Perfect circle
+
 .meta-test {
   cursor: default;
   user-select: none;
@@ -196,11 +200,16 @@ body {
   top: 10px;
   right: 10px;
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  width: $user-circle-size;
+  height: $user-circle-size;
   & .user-circle-rel {
     color: white;
     font-size: 18px;
     text-align: center;
+    background-color: transparent;
+    border: 0;
+    height: $user-circle-size;
+    width: $user-circle-size;
+    padding: 0;
   }
 }
