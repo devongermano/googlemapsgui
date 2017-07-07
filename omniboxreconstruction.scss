@@ -26,6 +26,11 @@ $omnisidebar-width: $omnibox-width + 40px;
 //User Circle
 $user-circle-size: 35px; // Perfect circle
 
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .meta-test {
   cursor: default;
   user-select: none;
@@ -39,6 +44,8 @@ $user-circle-size: 35px; // Perfect circle
   color: $omnibox-hi-color;
   transform: translateX(-50%) translateY(-50%);
 }
+
+
 
 body {
   background-image: url("grid.jpg");
@@ -54,7 +61,7 @@ body {
   left: 0;
   width: $omnisidebar-width;
   box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 3px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .omnisidebar-toggle {
@@ -63,13 +70,35 @@ body {
   justify-content: center;
   color: $omnibox-hi-color;
   z-index: -1;
-  position: relative;
-  background-color: white;
+  position: absolute;
+  background-color: rgba(255,255,255,0.9);
   height: $omnibox-height;
-  width: 20px;
-  left: $omnisidebar-width;
+  width: 25px;
+  left: 100%;
   top: 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
+}
+
+.omnisidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: #4a6dff;
+  & .omnibox-button {
+    & button {
+      & i {
+        color: white;
+      }
+    }
+  }
+  .omnibox-button.close {
+      margin: auto;
+  }
+}
+.omnisidebar-header-container {
+  color: white;
 }
 
 .omnibox-container {
@@ -80,17 +109,16 @@ body {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
   transition: background 0.3s ease 0s, box-shadow 0.3s ease 0s;
   background-color: white;
-}
-
-.omnibox {
-  height: $omnibox-height;
-  display: flex;
-  align-items: center;
+  .omnibox {
+    height: $omnibox-height;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .omnibox-input-container {
   height: $omnibox-input-height;
-  & input {
+   input {
     height: $omnibox-input-height;
     width: $omnibox-input-width;
     margin: 0 5px 0 5px; // TODO: This should be a variable to be used on the omnibox droplist text
@@ -107,7 +135,7 @@ body {
   justify-content: center;
   align-items: center;
   width: $omnibox-button-width;
-  & i {
+    i {
     color: $omnibox-hi-color;
     user-select: none;
   }
@@ -118,19 +146,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  & button {
+  button {
     background-color: transparent;
     border: 0;
     padding: 0;
     height: $omnibox-height + 2px; // The top and bottom padding plus the bottom border
     width: $omnibox-button-width;
-    & i {
+    i {
       color: $omnibox-hi-color;
       user-select: none;
     }
   }
-  & button.search {
-    & i:hover { // TODO: this hover should be on the parent, mod the child
+  button.search {
+    i:hover { // TODO: this hover should be on the parent, mod the child
       color: $omnibox-search-hover-color;
       user-select: none;
     }
@@ -140,37 +168,37 @@ body {
 // The box that exists inside of the extended omnibox-container, holds the search results
 .omnibox-droplist {
   border-top: 1px solid #e1e1e1;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 2px 0px, rgba(0, 0, 0, 0.01) 0px -1px 0px 0px;
+  //box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 2px 0px, rgba(0, 0, 0, 0.01) 0px -1px 0px 0px; // TODO: This looked strange...might wanna eval later?
   transition: background 0.3s ease 0s, box-shadow 0.3s ease 0s;
-  & ul {
+  ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    & li:first-child{
+    li:first-child {
       background-color: #ededed;
     }
-    & li {
+    li {
       display: flex;
       align-items: center;
       height: 38px; // TODO: Standardize
-      & .omnibox-selectable {
+      .omnibox-selectable {
         display: flex;
         align-items: center;
         height: 38px;
         border-bottom: 1px solid $omnibox-border-color;
         width: calc(100% - #{$omnibox-button-width}); // weird scss interpolation syntax
         margin: 0 0 0 5px;
-        & span {
+        span {
           cursor: default;
           font-size: $omnibox-font-size;
         }
       }
-        &:hover {
+      &:hover {
         background-color: #ededed;
       }
     }
-    & li:last-child{
-      & .omnibox-selectable {
+    li:last-child{
+      .omnibox-selectable {
         border: 0;
       }
     }
@@ -207,6 +235,7 @@ body {
 }
 
 .user-circle {
+  z-index: -2;
   display: flex;
   align-items: center;
   justify-content: center;
