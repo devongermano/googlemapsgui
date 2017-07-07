@@ -54,7 +54,22 @@ body {
   left: 0;
   width: $omnisidebar-width;
   box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 3px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
+  background-color: #ffffff;
+}
+
+.omnisidebar-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $omnibox-hi-color;
+  z-index: -1;
+  position: relative;
   background-color: white;
+  height: $omnibox-height;
+  width: 20px;
+  left: $omnisidebar-width;
+  top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
 }
 
 .omnibox-container {

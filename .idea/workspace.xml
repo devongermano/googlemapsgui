@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c3473c9-f763-4086-9e58-a81c107583bf" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cph-logo-main.svg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omniboxreconstruction.css" afterPath="$PROJECT_DIR$/omniboxreconstruction.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omniboxreconstruction.html" afterPath="$PROJECT_DIR$/omniboxreconstruction.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omniboxreconstruction.scss" afterPath="$PROJECT_DIR$/omniboxreconstruction.scss" />
@@ -26,9 +24,11 @@
           <file leaf-file-name="omniboxreconstruction.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/omniboxreconstruction.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="286">
-                  <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-                  <folding />
+                <state relative-caret-position="493">
+                  <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+                  <folding>
+                    <element signature="n#div#3;n#body#0;n#!!top" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -40,9 +40,44 @@
           <file leaf-file-name="omniboxreconstruction.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/omniboxreconstruction.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="938">
-                  <caret line="203" column="28" lean-forward="true" selection-start-line="203" selection-start-column="28" selection-end-line="203" selection-end-column="28" />
+                <state relative-caret-position="510">
+                  <caret line="63" column="27" lean-forward="false" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="omniboxreconstruction.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/omniboxreconstruction.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding>
+                    <marker date="1499392704763" expanded="true" signature="1530:2195" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="2206:2424" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="2451:2470" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="2504:2630" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="2646:2997" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="3016:3148" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="3166:3502" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="3528:3632" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="3662:3804" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="3845:3977" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="3997:4599" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="4623:4679" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="4720:4756" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="4785:5039" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="5090:5465" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="5523:5580" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="5617:5655" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="5715:5735" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="5750:6527" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="6556:6613" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="6645:6665" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="6691:6730" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="6745:7194" ph="{...}" />
+                    <marker date="1499392704763" expanded="true" signature="7227:7394" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -68,6 +103,7 @@
       <find>10</find>
       <find>box</find>
       <find>border-bottom</find>
+      <find>button</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -78,11 +114,11 @@
       <list>
         <option value="$PROJECT_DIR$/omnibox.css" />
         <option value="$PROJECT_DIR$/omnibox.html" />
-        <option value="$PROJECT_DIR$/omniboxreconstruction.css" />
         <option value="$PROJECT_DIR$/Reconstruction/omniboxrecontruction.css" />
         <option value="$PROJECT_DIR$/Reconstruction/omniboxreconstruction.css" />
         <option value="$PROJECT_DIR$/Reconstruction/omniboxreconstruction.scss" />
         <option value="$PROJECT_DIR$/Reconstruction/omniboxreconstruction.html" />
+        <option value="$PROJECT_DIR$/omniboxreconstruction.css" />
         <option value="$PROJECT_DIR$/omniboxreconstruction.html" />
         <option value="$PROJECT_DIR$/omniboxreconstruction.scss" />
       </list>
@@ -263,12 +299,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1499289650595</updated>
-      <workItem from="1499289651793" duration="31325000" />
+      <workItem from="1499289651793" duration="32260000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31325000" />
+    <option name="totallyTimeSpent" value="32260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -339,22 +375,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1499392704763" expanded="true" signature="1530:2195" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="2206:2424" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="2451:2470" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="2504:2630" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="2646:2997" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="3016:3148" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="3166:3502" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="3528:3632" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="3662:3804" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="3845:3977" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="3997:4599" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="4623:4679" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="4720:4756" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="4785:5039" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="5090:5465" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="5523:5580" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="5617:5655" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="5715:5735" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="5750:6527" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="6556:6613" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="6645:6665" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="6691:6730" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="6745:7194" ph="{...}" />
+            <marker date="1499392704763" expanded="true" signature="7227:7394" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/omniboxreconstruction.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="493">
+          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#3;n#body#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/omniboxreconstruction.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="938">
-          <caret line="203" column="28" lean-forward="true" selection-start-line="203" selection-start-column="28" selection-end-line="203" selection-end-column="28" />
+        <state relative-caret-position="510">
+          <caret line="63" column="27" lean-forward="false" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
           <folding />
         </state>
       </provider>
