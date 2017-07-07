@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c3473c9-f763-4086-9e58-a81c107583bf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grid.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/griddark.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cph-logo-main.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omniboxreconstruction.css" afterPath="$PROJECT_DIR$/omniboxreconstruction.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omniboxreconstruction.html" afterPath="$PROJECT_DIR$/omniboxreconstruction.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/omniboxreconstruction.scss" afterPath="$PROJECT_DIR$/omniboxreconstruction.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/omniboxreconstruction.css" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,16 +33,6 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="omniboxreconstruction.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/omniboxreconstruction.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="omniboxreconstruction.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/omniboxreconstruction.scss">
               <provider selected="true" editor-type-id="text-editor">
@@ -261,18 +245,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1499289650595</updated>
-      <workItem from="1499289651793" duration="29335000" />
+      <workItem from="1499289651793" duration="29448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29335000" />
+    <option name="totallyTimeSpent" value="29448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10585938" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10585938" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
