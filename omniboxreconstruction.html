@@ -1,7 +1,8 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-<link href="omniboxreconstruction.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" />
+<link href="omniboxreconstruction.css" rel="stylesheet" />
 
 <!--//--- Google Omnibox Reconstruction
     //--- Devon Germano - devon@cphandheld.com
@@ -9,7 +10,13 @@
 -->
 
 <body>
-<div class="omnibox-container">
+
+    <div class="meta-test">
+        <b>Geodesity Layout v1.0.1</b>
+    </div>
+
+    <!--<div class="omnisidebar"></div>-->
+    <div class="omnibox-container">
     <div class="omnibox">
         <div class="omnibox-button">
             <button>
@@ -17,7 +24,7 @@
             </button>
         </div>
         <div class="omnibox-input-container">
-            <form><input type="text"></form>
+            <form><input type="text" placeholder="Search Geodesity"></form>
         </div>
         <div class="omnibox-button">
             <button class="search">
@@ -71,4 +78,21 @@
         </ul>
     </div>
 </div>
+
+
+
+
+    <div class="zoom-toggle">
+        <div class="zoom-toggle-button top">
+            <button><i class="material-icons">add</i></button>
+        </div>
+        <div class="zoom-toggle-button">
+            <button><i class="material-icons">remove</i></button>
+        </div>
+    </div>
+
+
+
+
+
 </body>

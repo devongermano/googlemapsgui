@@ -1,9 +1,41 @@
+.meta-test {
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  top: 50%;
+  bottom: 50%;
+  width: 200px;
+  text-align: center;
+  color: #9b9b9b;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+
 body {
+  background-image: url("grid.jpg");
+  background-repeat: repeat;
+  background-size: auto;
   font-family: 'Roboto', sans-serif; }
+
+.omnisidebar {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  width: 400px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 3px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 3px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
+  background-color: white; }
 
 .omnibox-container {
   position: absolute;
-  height: 238px;
+  left: 12px;
+  top: 10px;
   border-radius: 2px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
@@ -11,7 +43,8 @@ body {
   transition: background 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
   -o-transition: background 0.3s ease 0s, box-shadow 0.3s ease 0s;
   transition: background 0.3s ease 0s, box-shadow 0.3s ease 0s;
-  transition: background 0.3s ease 0s, box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s; }
+  transition: background 0.3s ease 0s, box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+  background-color: white; }
 
 .omnibox {
   height: 48px;
@@ -22,8 +55,7 @@ body {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
-  border-bottom: 1px solid #e1e1e1; }
+  align-items: center; }
 
 .omnibox-input-container {
   height: 25px; }
@@ -32,7 +64,8 @@ body {
     width: 250px;
     margin: 0 5px 0 5px;
     border: 0;
-    caret-color: #9b9b9b; }
+    caret-color: #9b9b9b;
+    font-size: 14px; }
 
 .omnibox-icon {
   cursor: default;
@@ -90,9 +123,9 @@ body {
     user-select: none; }
 
 .omnibox-droplist {
-  height: 190px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 3px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 3px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
+  border-top: 1px solid #e1e1e1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 2px 0px, rgba(0, 0, 0, 0.01) 0px -1px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 2px 0px, rgba(0, 0, 0, 0.01) 0px -1px 0px 0px;
   -webkit-transition: background 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
   transition: background 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
   -o-transition: background 0.3s ease 0s, box-shadow 0.3s ease 0s;
@@ -132,3 +165,42 @@ body {
           font-size: 14px; }
       .omnibox-droplist ul li:hover {
         background-color: #ededed; }
+    .omnibox-droplist ul li:last-child .omnibox-selectable {
+      border: 0; }
+
+.zoom-toggle {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 26px;
+  height: 50px;
+  background-color: white;
+  border-radius: 2px; }
+
+.zoom-toggle-button button {
+  border: 0;
+  padding: 0;
+  background-color: white; }
+  .zoom-toggle-button button i {
+    color: grey; }
+
+.zoom-toggle-button.top {
+  border-bottom: 1px solid #9b9b9b; }

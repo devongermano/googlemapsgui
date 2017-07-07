@@ -4,9 +4,11 @@
 //--- July 2017
 //----------------------------------------------->>
 
+// Omnibox
 $omnibox-width: 360px;
 $omnibox-height: 48px;
 $omnibox-input-height: 25px;
+$omnibox-input-width: 250px;
 $omnibox-external-padding: 2px 0px 2px 0px;
 $omnibox-hi-color: #9b9b9b;
 $omnibox-button-width: $omnibox-height + 10px; // TODO: standardize on degree of rectification
@@ -14,34 +16,68 @@ $omnibox-droplist-height: 190px;
 $omnibox-border-color: #e1e1e1;
 $omnibox-search-hover-color: #1781ff; // TODO: point this to primary color
 $omnibox-search-result-amount: 5; // 5 is probably best
+$omnibox-font-size: 14px; // TODO: swap this for global default font size
+
+
+// Omnisidebar
+$omnisidebar-width: $omnibox-width + 40px;
+
+.meta-test {
+  cursor: default;
+  user-select: none;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  top: 50%;
+  bottom: 50%;
+  width: 200px;
+  text-align: center;
+  color: $omnibox-hi-color;
+  transform: translateX(-50%) translateY(-50%);
+}
 
 body {
+  background-image: url("grid.jpg");
+  background-repeat: repeat;
+  background-size: auto;
   font-family: 'Roboto', sans-serif;
+}
+
+.omnisidebar {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  width: $omnisidebar-width;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 0px 3px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
+  background-color: white;
 }
 
 .omnibox-container {
   position: absolute;
-  height: $omnibox-height + $omnibox-droplist-height;
+  left: 12px;
+  top: 10px;
   border-radius: 2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
   transition: background 0.3s ease 0s, box-shadow 0.3s ease 0s;
+  background-color: white;
 }
 
 .omnibox {
   height: $omnibox-height;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid $omnibox-border-color;
 }
 
 .omnibox-input-container {
   height: $omnibox-input-height;
   & input {
     height: $omnibox-input-height;
-    width: 250px;
+    width: $omnibox-input-width;
     margin: 0 5px 0 5px; // TODO: This should be a variable to be used on the omnibox droplist text
     border: 0;
     caret-color: $omnibox-hi-color;
+    font-size: $omnibox-font-size;
   }
 }
 
@@ -84,8 +120,8 @@ body {
 
 // The box that exists inside of the extended omnibox-container, holds the search results
 .omnibox-droplist {
-  height: $omnibox-droplist-height;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 3px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
+  border-top: 1px solid #e1e1e1;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 2px 0px, rgba(0, 0, 0, 0.01) 0px -1px 0px 0px;
   transition: background 0.3s ease 0s, box-shadow 0.3s ease 0s;
   & ul {
     margin: 0;
@@ -97,22 +133,56 @@ body {
     & li {
       display: flex;
       align-items: center;
-      height: $omnibox-droplist-height / $omnibox-search-result-amount;
+      height: 38px; // TODO: Standardize
       & .omnibox-selectable {
         display: flex;
         align-items: center;
-        height: $omnibox-droplist-height / $omnibox-search-result-amount;
+        height: 38px;
         border-bottom: 1px solid $omnibox-border-color;
         width: calc(100% - #{$omnibox-button-width}); // weird scss interpolation syntax
         margin: 0 0 0 5px;
         & span {
           cursor: default;
-          font-size: 14px;
+          font-size: $omnibox-font-size;
         }
       }
-      &:hover {
+        &:hover {
         background-color: #ededed;
       }
     }
+    & li:last-child{
+      & .omnibox-selectable {
+        border: 0;
+      }
+    }
   }
+}
+
+.zoom-toggle {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 26px;
+  height: 50px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.zoom-toggle-button {
+  & button {
+    border: 0;
+    padding: 0;
+    background-color: white;
+    & i {
+      color: grey;
+    }
+  }
+}
+.zoom-toggle-button.top {
+  border-bottom: 1px solid $omnibox-hi-color;
 }
