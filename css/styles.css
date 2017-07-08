@@ -1,0 +1,22 @@
+/* Just code for general testing & enviroment setup */
+
+.meta-test {
+    cursor: default;
+    user-select: none;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    top: 50%;
+    bottom: 50%;
+    width: 200px;
+    text-align: center;
+    color: grey;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+body {
+    background-image: url("../assets/photos/grid.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+    font-family: 'Roboto', sans-serif;
+}

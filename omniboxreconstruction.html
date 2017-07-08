@@ -2,9 +2,10 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" />
-<link href="omniboxreconstruction.css" rel="stylesheet" />
+<link href="css/styles.css" rel="stylesheet" />
+<link href="css/main.css" rel="stylesheet" />
 
-<!--//--- Google Omnibox Reconstruction
+<!--//--- Google Maps GUI Reconstruction
     //--- Devon Germano - devon@cphandheld.com
     //--- July 2017
 -->
@@ -25,95 +26,85 @@
 
     <div class="omnisidebar">
         <!-- The button that closes the sidebar -->
-        <div class="omnisidebar-toggle">
+        <button class="cph-button-semitransparent omnisidebar-toggle">
             <i class="material-icons">chevron_left</i>
-        </div>
+        </button>
 
         <div class="omnisidebar-header">
-            <div class="omnibox-button">
-                <button>
-                    <i class="material-icons">menu</i>
-                </button>
-            </div>
+            <button class="cph-button-light omnisidebar-header-button">
+                <i class="material-icons">menu</i>
+            </button>
 
             <div class="omnisidebar-header-container">
                 <h2>Skanska Vehicles</h2>
             </div>
 
-            <div class="omnibox-button close">
-                <button>
-                    <i class="material-icons">close</i>
-                </button>
-            </div>
-
-        </div>
-    </div>
-    </div>
-
-
-
-    <div class="omnibox-container">
-    <div class="omnibox">
-        <div class="omnibox-button">
-            <button>
-                <i class="material-icons">menu</i>
-            </button>
-        </div>
-        <div class="omnibox-input-container">
-            <form><input type="text" placeholder="Search Geodesity"></form>
-        </div>
-        <div class="omnibox-button">
-            <button class="search">
-                <i class="material-icons">search</i>
+            <button class="cph-button-light omnisidebar-header-button">
+                <i class="material-icons">close</i>
             </button>
         </div>
     </div>
-    <div class="omnibox-droplist">
-        <ul>
-            <li #clickeventhere>
-                <div class="omnibox-icon">
-                    <i class="material-icons">directions_car</i>
-                </div>
-                <div class="omnibox-selectable">
-                    <span>Truck <b>X23</b>V4</span>
-                </div>
-            </li>
-            <li>
-                <div class="omnibox-icon">
-                    <i class="material-icons">directions_car</i>
-                </div>
-                <div class="omnibox-selectable">
-                    <span>Car X23V4</span>
-                </div>
-            </li>
-            <li>
-                <div class="omnibox-icon">
-                    <i class="material-icons">person</i>
-                </div>
-                <div class="omnibox-selectable">
-                    <span>Driver Jane Simmons</span>
-                </div>
-            </li>
-            <li>
-                <div class="omnibox-icon">
-                    <i class="material-icons">search</i>
-                </div>
-                <div class="omnibox-selectable">
-                    <span>jane simmons</span>
-                </div>
-            </li>
-            <li>
-                <div class="omnibox-icon">
-                    <i class="material-icons">search</i>
-                </div>
-                <div class="omnibox-selectable">
-                    <span>jane simmets</span>
-                </div>
-            </li>
-
-        </ul>
     </div>
-</div>
+
+
+
+    <!--<div class="omnibox-container">-->
+        <!--<div class="omnibox">-->
+            <!--<button class="cph-button omnibox-button">-->
+                <!--<i class="material-icons">menu</i>-->
+            <!--</button>-->
+            <!--<div class="omnibox-input-container">-->
+                <!--<form><input type="text" placeholder="Search Geodesity"></form>-->
+            <!--</div>-->
+            <!--<button class="cph-button omnibox-button">-->
+                <!--<i class="material-icons">search</i>-->
+            <!--</button>-->
+        <!--</div>-->
+        <!--<div class="omnibox-droplist">-->
+            <!--<ul>-->
+                <!--<li #clickeventhere>-->
+                    <!--<div class="omnibox-icon">-->
+                        <!--<i class="material-icons">directions_car</i>-->
+                    <!--</div>-->
+                    <!--<div class="omnibox-selectable">-->
+                        <!--<span>Truck <b>X23</b>V4</span>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<div class="omnibox-icon">-->
+                        <!--<i class="material-icons">directions_car</i>-->
+                    <!--</div>-->
+                    <!--<div class="omnibox-selectable">-->
+                        <!--<span>Car X23V4</span>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<div class="omnibox-icon">-->
+                        <!--<i class="material-icons">person</i>-->
+                    <!--</div>-->
+                    <!--<div class="omnibox-selectable">-->
+                        <!--<span>Driver Jane Simmons</span>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<div class="omnibox-icon">-->
+                        <!--<i class="material-icons">search</i>-->
+                    <!--</div>-->
+                    <!--<div class="omnibox-selectable">-->
+                        <!--<span>jane simmons</span>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<div class="omnibox-icon">-->
+                        <!--<i class="material-icons">search</i>-->
+                    <!--</div>-->
+                    <!--<div class="omnibox-selectable">-->
+                        <!--<span>jane simmets</span>-->
+                    <!--</div>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
 
 
 

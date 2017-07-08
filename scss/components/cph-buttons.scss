@@ -1,0 +1,44 @@
+@import "../variables";
+
+//---------------------------------------------->>
+//--- Google Maps Sidebar Reconstruction
+//--- Devon Germano - devon@cphandheld.com
+//--- July 2017
+//----------------------------------------------->>
+
+//>> .cph-button-$colorproperty$
+//>> position is manipulated by qualifiers in components
+//>> <button class=".cph-button-$colorproperty$ .$component$-button"></button>
+
+button.cph-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  i {
+    color: $omnibox-hi-color; // TODO: Standardize
+  }
+  &:hover {
+    & i {
+      color: #1781ff; // TODO: Swap for primary colour
+    }
+  }
+}
+button.cph-button-light {
+  @extend button.cph-button;
+  i {
+    color: white; // TODO: Swap for primary white
+  }
+  &:hover {
+    & i {
+      color: white; // TODO: Not sure how to deal with this maybe orange?
+    }
+  }
+}
+button.cph-button-semitransparent {
+  @extend button.cph-button;
+  background-color: rgba(255,255,255,0.9);
+}
