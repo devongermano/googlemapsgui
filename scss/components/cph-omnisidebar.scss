@@ -30,8 +30,8 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  height: 70px;
-  background-color: #4a6dff;
+  height: 65px;
+  background-color: rgb(66, 133, 244);
   &-button {
     margin: 25px;
     &:last-child {
@@ -40,7 +40,15 @@
   }
 }
 
+.omnisidebar-list {
+  li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 30px;
+    border-bottom: 1px solid $omnibox-border-color;
+    span {
 
-.omnisidebar-header-container {
-  color: white;
+    }
+  }
 }

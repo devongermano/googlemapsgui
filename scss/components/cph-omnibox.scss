@@ -10,11 +10,12 @@
 h2 {
   font-size: 18px;
   font-weight: 500;
+  color: white;
 }
 
 .omnibox-container {
   position: absolute;
-  left: 12px;
+  left: 11px;
   top: 10px;
   border-radius: 2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
@@ -47,6 +48,7 @@ h2 {
   align-items: center;
   width: $omnibox-button-width;
     i {
+    font-size: 22px;
     color: $omnibox-hi-color;
     user-select: none;
   }

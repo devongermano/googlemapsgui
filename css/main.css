@@ -31,11 +31,12 @@ button.cph-button-semitransparent {
 
 h2 {
   font-size: 18px;
-  font-weight: 500; }
+  font-weight: 500;
+  color: white; }
 
 .omnibox-container {
   position: absolute;
-  left: 12px;
+  left: 11px;
   top: 10px;
   border-radius: 2px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.02) 0px -1px 0px 0px;
@@ -65,7 +66,7 @@ h2 {
     margin: 0 5px 0 5px;
     border: 0;
     caret-color: #9b9b9b;
-    font-size: 14px; }
+    font-size: 13px; }
 
 .omnibox-icon {
   cursor: default;
@@ -83,6 +84,7 @@ h2 {
   align-items: center;
   width: 58px; }
   .omnibox-icon i {
+    font-size: 22px;
     color: #9b9b9b;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -131,7 +133,7 @@ h2 {
         margin: 0 0 0 5px; }
         .omnibox-droplist ul li .omnibox-selectable span {
           cursor: default;
-          font-size: 14px; }
+          font-size: 13px; }
       .omnibox-droplist ul li:hover {
         background-color: #ededed; }
     .omnibox-droplist ul li:last-child .omnibox-selectable {
@@ -170,15 +172,25 @@ h2 {
   -ms-flex-pack: start;
   justify-content: flex-start;
   width: 100%;
-  height: 70px;
-  background-color: #4a6dff; }
+  height: 65px;
+  background-color: #4285f4; }
   .omnisidebar-header-button {
     margin: 25px; }
     .omnisidebar-header-button:last-child {
       margin-left: auto; }
 
-.omnisidebar-header-container {
-  color: white; }
+.omnisidebar-list li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+  height: 30px;
+  border-bottom: 1px solid #e1e1e1; }
 
 .user-circle {
   z-index: -2;
